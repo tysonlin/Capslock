@@ -1254,7 +1254,7 @@ rules:
 
 
       #==========================================================#
-      # ( e ) --> safari / finder / mail                         #
+      # ( e ) --> chrome / finder / mail                         #
       #==========================================================#
       - description: 'command + e = finder'
         type: basic
@@ -1266,10 +1266,10 @@ rules:
         from: { key_code: e, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a mail } ]
 
-      - description: 'e = safari'
+      - description: 'e = chrome'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Safari } ]
+        to: [ { shell_command: open -a 'Google Chrome' } ]
 
 
       #==========================================================#
@@ -1345,12 +1345,12 @@ rules:
         to: [ { shell_command: open -a 'Alfred 4' } ]
 
       #==========================================================#
-      # ( g ) --> idea / chrome / calender                       #
+      # ( g ) --> idea / safari / calender                       #
       #==========================================================#
-      - description: 'command + g = Chrome'
+      - description: 'command + g = Safari'
         type: basic
         from: { key_code: g, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Google Chrome' } ]
+        to: [ { shell_command: open -a Safari } ]
 
       - description: 'option + g = Calender'
         type: basic
@@ -1423,14 +1423,15 @@ rules:
         from: { key_code: c, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: c , modifiers: [ left_control ] } ]
 
+      # DISABLED IN FAVOUR OF PLAIN TEXT PASTE
       #==========================================================#
       # ( v ) -->  Vim Prefix Meta Key                           #
       #==========================================================#
       # - description: 'v = vim meta key'
-      - description: 'v = ctrl-v'
-        type: basic
-        from: { key_code: v, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: v , modifiers: [ left_control ] } ]
+      # - description: 'v = ctrl-v'
+      #   type: basic
+      #   from: { key_code: v, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: v , modifiers: [ left_control ] } ]
 
 
       #==========================================================#
