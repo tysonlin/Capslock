@@ -1254,31 +1254,31 @@ rules:
 
 
       #==========================================================#
-      # ( e ) --> chrome / finder / mail                         #
+      # ( e ) --> arc / chrome / mail                         #
       #==========================================================#
-      - description: 'command + e = finder'
+      - description: 'command + e = chrome'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a finder } ]
+        to: [ { shell_command: open -a 'Google Chrome' } ]
 
       - description: 'option + e = mail'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a mail } ]
 
-      - description: 'e = chrome'
+      - description: 'e = Arc'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Google Chrome' } ]
+        to: [ { shell_command: open -a Arc } ]
 
 
       #==========================================================#
-      # ( r ) --> iterm / preview / terminal                     #
+      # ( r ) --> iterm / Zoom / terminal                     #
       #==========================================================#
-      - description: 'command + r = preview'
+      - description: 'command + r = zoom'
         type: basic
         from: { key_code: r, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Preview } ]
+        to: [ { shell_command: open -a zoom.us } ]
 
       - description: 'option + r = terminal'
         type: basic
@@ -1309,7 +1309,7 @@ rules:
         to: [ { shell_command: open -a 'Visual Studio Code' } ]
 
       #==========================================================#
-      # ( y ) --> siri / karabiner / amphetamine                 #
+      # ( y ) --> slack / karabiner / amphetamine                 #
       #==========================================================#
       - description: 'command + y = karabiner'
         type: basic
@@ -1321,28 +1321,28 @@ rules:
         from: { key_code: y, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a amphetamine } ]
 
-      - description: 'y = Siri'
+      - description: 'y = Slack'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Siri } ]
+        to: [ { shell_command: open -a Slack } ]
 
       #==========================================================#
-      # ( f ) --> alfred 4 / Dash / Dictionary                   #
+      # ( f ) --> finder / calender / Dictionary                   #
       #==========================================================#
-      - description: 'command + f = Dash'
+      - description: 'command + f = Calender'
         type: basic
         from: { key_code: f, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Dash } ]
+        to: [ { shell_command: open -a Calendar } ]
 
       - description: 'option + f = Dictionary'
         type: basic
         from: { key_code: f, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a Dictionary } ]
 
-      - description: 'f = Alfred 4'
+      - description: 'f = Finder'
         type: basic
         from: { key_code: f, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Alfred 4' } ]
+        to: [ { shell_command: open -a 'Finder' } ]
 
       #==========================================================#
       # ( g ) --> idea / safari / calender                       #

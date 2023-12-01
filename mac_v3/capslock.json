@@ -4777,7 +4777,7 @@
       "description": "Hyper Application",
       "manipulators": [
         {
-          "description": "command + e = finder",
+          "description": "command + e = chrome",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -4793,7 +4793,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a finder"
+              "shell_command": "open -a 'Google Chrome'"
             }
           ]
         },
@@ -4819,7 +4819,7 @@
           ]
         },
         {
-          "description": "e = chrome",
+          "description": "e = Arc",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -4834,12 +4834,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome'"
+              "shell_command": "open -a Arc"
             }
           ]
         },
         {
-          "description": "command + r = preview",
+          "description": "command + r = zoom",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -4855,7 +4855,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Preview"
+              "shell_command": "open -a zoom.us"
             }
           ]
         },
@@ -5005,7 +5005,7 @@
           ]
         },
         {
-          "description": "y = Siri",
+          "description": "y = Slack",
           "type": "basic",
           "from": {
             "key_code": "y",
@@ -5020,12 +5020,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Siri"
+              "shell_command": "open -a Slack"
             }
           ]
         },
         {
-          "description": "command + f = Dash",
+          "description": "command + f = Calender",
           "type": "basic",
           "from": {
             "key_code": "f",
@@ -5041,7 +5041,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Dash"
+              "shell_command": "open -a Calendar"
             }
           ]
         },
@@ -5067,7 +5067,7 @@
           ]
         },
         {
-          "description": "f = Alfred 4",
+          "description": "f = Finder",
           "type": "basic",
           "from": {
             "key_code": "f",
@@ -5082,7 +5082,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Alfred 4'"
+              "shell_command": "open -a 'Finder'"
             }
           ]
         },
